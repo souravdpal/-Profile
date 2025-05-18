@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourav - Cybersecurity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="preloader"></div>
+    <div class="matrix-bg"></div>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="cybersecurity.html" class="active">Cybersecurity</a>
+            <a href="social.html">Social</a>
+        </div>
+        <div class="theme-selector">
+            <button class="theme-btn active" data-theme="cyberpunk">Cyberpunk</button>
+            <button class="theme-btn" data-theme="neon-blue">Neon Blue</button>
+            <button class="theme-btn" data-theme="hacker-red">Hacker Red</button>
+            <button class="theme-btn" data-theme="pastel">Pastel</button>
+        </div>
+    </nav>
+
+    <section class="cybersecurity">
+        <h2 class="animate jitter">Cybersecurity & Linux</h2>
+        <div class="terminal animate">
+            <div class="output">$ whoami</div>
+            <div class="output">Self-taught cybersecurity enthusiast</div>
+            <div class="output">$ nmap -sV localhost</div>
+            <div class="output">Scanning ports: 22, 80, 443</div>
+            <div>$ <input type="text" id="terminal-input" placeholder="Type a command..."></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Sourav. Built with passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

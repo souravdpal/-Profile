@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourav - Social</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="preloader"></div>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="cybersecurity.html">Cybersecurity</a>
+            <a href="social.html" class="active">Social</a>
+        </div>
+        <div class="theme-selector">
+            <button class="theme-btn active" data-theme="cyberpunk">Cyberpunk</button>
+            <button class="theme-btn" data-theme="neon-blue">Neon Blue</button>
+            <button class="theme-btn" data-theme="hacker-red">Hacker Red</button>
+            <button class="theme-btn" data-theme="pastel">Pastel</button>
+        </div>
+    </nav>
+
+    <section class="social">
+        <h2 class="animate jitter">Connect with Me</h2>
+        <div class="social-content">
+            <div class="social-card animate">
+                <h3>About Me</h3>
+                <p>A 16-year-old tech enthusiast passionate about coding, hacking, and exploring the digital world. Follow me to see my latest projects and experiments!</p>
+                <div class="social-links">
+                    <a href="https://github.com/souravdpal" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/itz_srvsourav" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/notsrvsourav" target="_blank"><i class="fab fa-x"></i></a>
+                </div>
+                <div class="github-stats">
+                    <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=transparent" alt="GitHub Stats">
+                </div>
+            </div>
+            <div class="social-card animate">
+                <h3>Contact Me</h3>
+                <form action="https://formspree.io/f/xwpoygae" method="POST">
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Sourav. Built with passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
