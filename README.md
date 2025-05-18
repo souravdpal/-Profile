@@ -19,7 +19,7 @@ Hi, I’m **Sourav**, a 16-year-old passionate developer and learner.
 ## Contact
 Feel free to connect with me:
 - GitHub: [github.com/souravdpal](https://github.com/souravdpal)
-- Email: your-email@example.com
+- Email: sourav2026resolution.com
 
 ---
 
