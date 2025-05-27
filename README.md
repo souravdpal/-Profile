@@ -1,6 +1,6 @@
 # Sourav's Portfolio
 
-Hi, I’m **Sourav**, a 16-year-old passionate developer and learner.
+Hi, I’m **Sourav**, a  passionate developer and learner.
 
 ## About Me
 - Currently learning and building projects using the **MERN stack** (MongoDB, Express, React, Node.js).
