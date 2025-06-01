@@ -16,8 +16,8 @@ const sampleProjects = [
         html_url: 'https://souravdpal.github.io/TO-DO/?fbclid=PAZXh0bgNhZW0CMTEAAacbiSpEg1hAeIArsWyFhj7Y7JUoBUPBbt4nrDRXpKRHzztAmQkGZQ4DrNY7pQ_aem_9BIICEaCPAyecD9i0AoBHQ'
     },
     {
-        name: 'Real-Time Chat + Search App',
-        description: 'A real-time multi-functional chat and search app. Users can chat globally, send friend requests, and have personal encrypted 1:1 chats via sockets. It features model-switching with Ollama, multilingual Wikipedia queries, and a secure Node.js backend using bcrypt with 10 salt rounds.',
+        name: 'Real-Time Chat + Search App(on work)',
+        description: 'A real-time multi-functional chat and search app. Users can chat globally, send friend requests, and have personal encrypted 1:1 chats via sockets. It features model-switching with Ollama, multilingual Wikipedia queries, and a secure Node.js backend using bcrypt with 10 salt webrtc and socket .io and fully voice andwhole site handled by our ~ HINA.AIrounds.',
         html_url: 'https://github.com/souravdpal/chat'
     }
 ];
