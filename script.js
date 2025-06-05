@@ -16,9 +16,15 @@ const sampleProjects = [
         html_url: 'https://souravdpal.github.io/TO-DO/?fbclid=PAZXh0bgNhZW0CMTEAAacbiSpEg1hAeIArsWyFhj7Y7JUoBUPBbt4nrDRXpKRHzztAmQkGZQ4DrNY7pQ_aem_9BIICEaCPAyecD9i0AoBHQ'
     },
     {
-        name: 'Real-Time Chat + Search App(on work)',
-        description: 'A real-time multi-functional chat and search app. Users can chat globally, send friend requests, and have personal encrypted 1:1 chats via sockets. It features model-switching with Ollama, multilingual Wikipedia queries, and a secure Node.js backend using bcrypt with 10 salt webrtc and socket .io and fully voice andwhole site handled by our ~ HINA.AIrounds.',
-        html_url: 'https://github.com/souravdpal/chat'
+        name: 'Hina-ai',
+        description: 'Fine tuned for my site and complte inegrated eveywhere',
+        html_url: 'https://hina-39ib.onrender.com'
+    },
+    {
+        name: 'Real-Time Chat + Search App V1-beta',
+        description: "A real-time, multifunctional chat and search application featuring a global chatroom, friend requests, secure end-to-end encrypted 1:1 chats using WebRTC and Socket.IO, multilingual Wikipedia search integration, dynamic AI model switching via Ollama, and full voice interaction across the entire app."
+,
+        html_url: 'https://hina-ai.onrender.com'
     }
 ];
 
