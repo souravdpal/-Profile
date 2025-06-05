@@ -2,13 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of a 16-year-old self-taught tech enthusiast specializing in backend development and cybersecurity.">
     <meta name="keywords" content="backend development, cybersecurity, Node.js, Linux, portfolio">
     <title>Sourav - Tech Playground</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Popup styles */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content {
+            background: #1a1a1a;
+            border: 2px solid #00ffcc;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'Roboto Mono', monospace;
+            color: #00ffcc;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+        }
+        .popup-content h2 {
+            margin-bottom: 20px;
+            font-family: 'Orbitron', sans-serif;
+            color: #00ffcc;
+        }
+        .popup-btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #00ffcc;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .popup-btn:hover {
+            background: #ff00ff;
+            transform: scale(1.05);
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            color: #00ffcc;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="preloader"></div>
@@ -31,16 +86,40 @@
 
     <section class="hero">
         <h1 class="animate jitter">Hey, I'm Sourav</h1>
-        <p class="animate">I'm 16 yrs and a  self-taught tech enthusiast , diving deep into backend web development, Linux, and cybersecurity. Tech is my playground, and I build, break, and explore with passion.</p>
-        <a href="https://hina-39ib.onrender.com/" class="btn animate">HINA AI</a>
-         <a href="https://hina-39ib.onrender.com/" class="btn animate">~HINA AI</a>
-        
+        <p class="animate">I'm 16 yrs and a self-taught tech enthusiast, diving deep into backend web development, Linux, and cybersecurity. Tech is my playground, and I build, break, and explore with passion.</p>
+        <a href="#" class="btn animate" onclick="showPopup()">Explore Hina AI</a>
     </section>
+
+    <!-- Popup -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Explore Hina AI</h2>
+            <a href="https://hina-39ib.onrender.com/" class="popup-btn">Professional Hina AI</a>
+            <a href="https://hina-ai.onrender.com/" class="popup-btn">Unprofessional Hina AI</a>
+        </div>
+    </div>
 
     <footer>
         <p>© 2025 Sourav. Built with passion.</p>
     </footer>
 
+    <script>
+        function showPopup() {
+            document.getElementById('popupOverlay').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popupOverlay').style.display = 'none';
+        }
+
+        // Close popup when clicking outside
+        document.getElementById('popupOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePopup();
+            }
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
