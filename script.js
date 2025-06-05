@@ -7,7 +7,7 @@ const sampleProjects = [
   {
     name: 'Solo Leveling RPG',
     description: 'An RPG game where I learned real-time authentication, password hashing (bcrypt with 10 salt rounds), and backend development. It features XP-based productivity tasks, a leaderboard, and real-time updates.',
-    html_url: 'https://solo-86qm.onrender.com/signup.html?fbclid=PAZXh0bgNhZW0CMTEAAacBJp7g8xJfzaASSxiohap887zRa0umzFU0jUYlvraKvLsreTMok8yTMXF8nQ_aem_rgefJonEZG_pCyzX39T4Cg'
+    html_url: 'https://solo-vh6u.onrender.com'
   },
   {
     name: 'To-Do List',
