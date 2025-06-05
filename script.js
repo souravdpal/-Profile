@@ -1,32 +1,31 @@
-// Define sampleProjects at the top to ensure it's globally accessible
 const sampleProjects = [
-    {
-        name: 'My-Store',
-        description: 'An e-commerce platform and my first project involving authentication. It’s based on affiliate marketing and taught me the basics of user auth systems.',
-        html_url: 'https://souravdpal.github.io/store/?fbclid=PAZXh0bgNhZW0CMTEAAafpmVD-gb7KiYXvfGOhVXUzh8rlypUl5jG_aGyFMmMoIsFVGdMPf9j6eWT6uw_aem_9XZoAUk44_WufZh9sC_teQ'
-    },
-    {
-        name: 'Solo Leveling RPG',
-        description: 'An RPG game project where I learned real-time authentication, password hashing (bcrypt with 10 salt rounds), and backend development. It features XP-based productivity tasks, a leaderboard, and real-time updates.',
-        html_url: 'https://solo-86qm.onrender.com/signup.html?fbclid=PAZXh0bgNhZW0CMTEAAacBJp7g8xJfzaASSxiohap887zRa0umzFU0jUYlvraKvLsreTMok8yTMXF8nQ_aem_rgefJonEZG_pCyzX39T4Cg'
-    },
-    {
-        name: 'To-Do List',
-        description: 'A basic to-do list application I created while learning JavaScript. It was my entry project into building real-world functionality with JS.',
-        html_url: 'https://souravdpal.github.io/TO-DO/?fbclid=PAZXh0bgNhZW0CMTEAAacbiSpEg1hAeIArsWyFhj7Y7JUoBUPBbt4nrDRXpKRHzztAmQkGZQ4DrNY7pQ_aem_9BIICEaCPAyecD9i0AoBHQ'
-    },
-    {
-        name: 'Hina-ai',
-        description: 'Fine tuned for my site and complte inegrated eveywhere',
-        html_url: 'https://hina-39ib.onrender.com'
-    },
-    {
-        name: 'Real-Time Chat + Search App V1-beta',
-        description: "A real-time, multifunctional chat and search application featuring a global chatroom, friend requests, secure end-to-end encrypted 1:1 chats using WebRTC and Socket.IO, multilingual Wikipedia search integration, dynamic AI model switching via Ollama, and full voice interaction across the entire app."
-,
-        html_url: 'https://hina-ai.onrender.com'
-    }
+  {
+    name: 'My-Store',
+    description: 'An e-commerce platform and my first project involving authentication. Based on affiliate marketing, it taught me the basics of user authentication systems.',
+    html_url: 'https://souravdpal.github.io/store/?fbclid=PAZXh0bgNhZW0CMTEAAafpmVD-gb7KiYXvfGOhVXUzh8rlypUl5jG_aGyFMmMoIsFVGdMPf9j6eWT6uw_aem_9XZoAUk44_WufZh9sC_teQ'
+  },
+  {
+    name: 'Solo Leveling RPG',
+    description: 'An RPG game where I learned real-time authentication, password hashing (bcrypt with 10 salt rounds), and backend development. It features XP-based productivity tasks, a leaderboard, and real-time updates.',
+    html_url: 'https://solo-86qm.onrender.com/signup.html?fbclid=PAZXh0bgNhZW0CMTEAAacBJp7g8xJfzaASSxiohap887zRa0umzFU0jUYlvraKvLsreTMok8yTMXF8nQ_aem_rgefJonEZG_pCyzX39T4Cg'
+  },
+  {
+    name: 'To-Do List',
+    description: 'A basic to-do list application I built while learning JavaScript. It was my first project that applied JS to real-world functionality.',
+    html_url: 'https://souravdpal.github.io/TO-DO/?fbclid=PAZXh0bgNhZW0CMTEAAacbiSpEg1hAeIArsWyFhj7Y7JUoBUPBbt4nrDRXpKRHzztAmQkGZQ4DrNY7pQ_aem_9BIICEaCPAyecD9i0AoBHQ'
+  },
+  {
+    name: 'Hina-AI',
+    description: 'A fine-tuned AI assistant fully integrated across my site, handling voice commands, chat, and dynamic tasks intelligently.',
+    html_url: 'https://hina-39ib.onrender.com'
+  },
+  {
+    name: 'Real-Time Chat + Search App V1-Beta',
+    description: 'A real-time, multifunctional chat and search application featuring a global chatroom, friend requests, secure end-to-end encrypted 1:1 chats using WebRTC and Socket.IO, multilingual Wikipedia search integration, dynamic AI model switching via Ollama, and full voice interaction across the app.',
+    html_url: 'https://github.com/souravdpal/chat'
+  }
 ];
+
 
 // Preloader
 document.addEventListener('DOMContentLoaded', () => {
