@@ -22,7 +22,7 @@ const sampleProjects = [
   {
     name: 'Real-Time Chat + Search App V1-Beta',
     description: 'A real-time, multifunctional chat and search application featuring a global chatroom, friend requests, secure end-to-end encrypted 1:1 chats using WebRTC and Socket.IO, multilingual Wikipedia search integration, dynamic AI model switching via Ollama, and full voice interaction across the app.',
-    html_url: 'https://github.com/souravdpal/chat'
+    html_url: 'https://hina-ai.onrender.com/'
   }
 ];
 
