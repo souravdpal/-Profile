@@ -364,17 +364,24 @@ const initTerminal = () => {
 /**
  * Fetches and displays GitHub projects
  */
+/**
+ * Fetches and displays GitHub projects
+ */
 const initProjects = async () => {
   const projectGrid = document.querySelector('.project-grid');
   if (!projectGrid) return;
 
   const createProjectCard = ({ name, description, html_url }) => {
+    const safeName = sanitizeInput(name || 'Unnamed Project');
+    const safeDescription = sanitizeInput(description || 'No description available');
+    const safeUrl = html_url || '#';
+
     const card = document.createElement('div');
     card.classList.add('project-card', 'animate');
     card.innerHTML = `
-      <h3>${sanitizeInput(name)}</h3>
-      <p>${sanitizeInput(description || 'No description available')}</p>
-      <a href="${html_url}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      <h3>${safeName}</h3>
+      <p>${safeDescription}</p>
+      <a href="${safeUrl}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     `;
     projectGrid.appendChild(card);
     if (observer) {
@@ -387,13 +394,19 @@ const initProjects = async () => {
     if (!response.ok) throw new Error(`GitHub API request failed: ${response.status}`);
     const data = await response.json();
     projectGrid.innerHTML = '';
-    (data.slice(0, 3).length ? data : sampleProjects).forEach(createProjectCard);
+
+    const validProjects = data
+      .filter((p) => p.name && p.html_url)
+      .slice(0, 3);
+
+    (validProjects.length ? validProjects : sampleProjects).forEach(createProjectCard);
   } catch (error) {
     console.warn('Failed to fetch GitHub repos:', error);
     projectGrid.innerHTML = '';
     sampleProjects.forEach(createProjectCard);
   }
 };
+
 
 /**
  * Initializes all features on DOM load
