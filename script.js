@@ -1,4 +1,4 @@
-// Sample project data as a fallback
+// Sample project data
 const sampleProjects = [
   {
     name: 'My-Store',
@@ -362,12 +362,9 @@ const initTerminal = () => {
 };
 
 /**
- * Fetches and displays GitHub projects
+ * Displays projects from sampleProjects array
  */
-/**
- * Fetches and displays GitHub projects
- */
-const initProjects = async () => {
+const initProjects = () => {
   const projectGrid = document.querySelector('.project-grid');
   if (!projectGrid) return;
 
@@ -381,7 +378,7 @@ const initProjects = async () => {
     card.innerHTML = `
       <h3>${safeName}</h3>
       <p>${safeDescription}</p>
-      <a href="${safeUrl}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      <a href="${safeUrl}" target="_blank" rel="noopener noreferrer">View Project</a>
     `;
     projectGrid.appendChild(card);
     if (observer) {
@@ -389,24 +386,9 @@ const initProjects = async () => {
     }
   };
 
-  try {
-    const response = await fetch('https://api.github.com/users/souravdpal/repos');
-    if (!response.ok) throw new Error(`GitHub API request failed: ${response.status}`);
-    const data = await response.json();
-    projectGrid.innerHTML = '';
-
-    const validProjects = data
-      .filter((p) => p.name && p.html_url)
-      .slice(0, 3);
-
-    (validProjects.length ? validProjects : sampleProjects).forEach(createProjectCard);
-  } catch (error) {
-    console.warn('Failed to fetch GitHub repos:', error);
-    projectGrid.innerHTML = '';
-    sampleProjects.forEach(createProjectCard);
-  }
+  projectGrid.innerHTML = '';
+  sampleProjects.forEach(createProjectCard);
 };
-
 
 /**
  * Initializes all features on DOM load
