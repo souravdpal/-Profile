@@ -27,6 +27,9 @@ const sampleProjects = [
   },
 ];
 
+// Global IntersectionObserver for scroll animations
+let observer;
+
 /**
  * Initializes the preloader animation
  * @param {number} timeout - Time in milliseconds before hiding preloader
@@ -146,7 +149,7 @@ const playClickSound = async () => {
  * Initializes scroll-based animations
  */
 const initScrollAnimations = () => {
-  const observer = new IntersectionObserver(
+  observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -374,7 +377,9 @@ const initProjects = async () => {
       <a href="${html_url}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     `;
     projectGrid.appendChild(card);
-    observer.observe(card);
+    if (observer) {
+      observer.observe(card);
+    }
   };
 
   try {
