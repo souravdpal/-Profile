@@ -364,6 +364,9 @@ const initTerminal = () => {
 /**
  * Displays projects from sampleProjects array
  */
+/**
+ * Displays predefined sample projects only
+ */
 const initProjects = () => {
   const projectGrid = document.querySelector('.project-grid');
   if (!projectGrid) return;
@@ -386,6 +389,7 @@ const initProjects = () => {
     }
   };
 
+  // Clear grid and render only sample projects
   projectGrid.innerHTML = '';
   sampleProjects.forEach(createProjectCard);
 };
